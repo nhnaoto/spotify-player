@@ -19,6 +19,7 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
+        "../node_modules/bootswatch/cyborg//bootstrap.min.css",
         "styles.css"
       ],
       "scripts": [],

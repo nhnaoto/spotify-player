@@ -21,6 +21,8 @@
     "@angular/platform-browser": "^4.2.4",
     "@angular/platform-browser-dynamic": "^4.2.4",
     "@angular/router": "^4.2.4",
+    "bootstrap": "^3.3.7",
+    "bootswatch": "git+https://github.com/thomaspark/bootswatch.git#2895c25c78ea3fce31623f206baab0d7bfdbe1c8",
     "core-js": "^2.4.1",
     "rxjs": "^5.4.2",
     "zone.js": "^0.8.14"
