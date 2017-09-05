@@ -1,3 +1,8 @@
-<p>
-  search works!
-</p>
+<h1>Enjoy Music</h1>
+<a href="/authorize">Authorization</a>
+<form>
+	<div>
+		<input name="searchWord" class="form-control" [(ngModel)]="searchWord" (keyup)="onSearch()"/>
+	</div>
+	{{searchWord}}
+</form>
