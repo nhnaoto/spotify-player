@@ -23,7 +23,7 @@ export class SearchService {
     headers.append('Authorization' , 'Bearer ' + token);
 
     return this.http.get(searchUrl , {headers : headers})
-       .map((res) => res.json())
+       .map( res => res.json())
   }
 
 }

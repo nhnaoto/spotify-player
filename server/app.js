@@ -4,10 +4,9 @@ var path = require('path');
 var querystring = require('querystring');
 var cookieParser = require('cookie-parser');
 
-// spotify info 
-var client_id = 'xxxxxxx'; // Your client id
-var client_secret = 'yyyyyyyy'; // Your secret
-var redirect_uri = 'http://localhost:4200/callback/';
+// var client_id = 'xxxxxxx'; // Your client id
+// var client_secret = 'yyyyyyyy'; // Your secret
+// var redirect_uri = 'http://localhost:4200/callback/';
 
 /**
  * Generates a random string containing numbers and letters
