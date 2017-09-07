@@ -22,14 +22,20 @@ export class SearchComponent implements OnInit {
   ngOnInit() {
    
     this.route.queryParams.subscribe(
-      params => { this.access_token = params['access_token'];}  
+      params => { 
+        console.log('token:' + params['access_token']);
+        if (params['access_token'] !== undefined){
+          this.access_token = params['access_token'];
+          localStorage.setItem('a_token', this.access_token)
+        }
+      }  
     );
 
     console.log('access_token: ' + this.access_token);
   }
 
   onSearch(){
-  	this.searchService.searchMusic(this.searchWord, 'artist', this.access_token)
+  	this.searchService.searchMusic(this.searchWord, 'artist', localStorage.getItem('a_token'))
   		.subscribe(res => {
         this.searchRes = res.artists.items;
   			console.log(res.artists.items);
