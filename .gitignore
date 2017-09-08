@@ -42,5 +42,3 @@ yarn-error.log
 .DS_Store
 Thumbs.db
 
-# ignored temporarily
-/server/app.js
