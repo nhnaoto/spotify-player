@@ -22,7 +22,7 @@ export class SearchService {
 
 	searchMusic(str:string, type='artist', token:string){
 
-    let searchUrl = 'https://api.spotify.com/v1/search?query='+str+'&offset=0&limit=50&type='+type;
+    let searchUrl = 'https://api.spotify.com/v1/search?query='+str+'&offset=0&limit=50&type='+type+'&market=US';
     let headers = new Headers();
 
     headers.append('Authorization' , 'Bearer ' + token);

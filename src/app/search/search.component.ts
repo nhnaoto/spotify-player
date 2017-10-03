@@ -35,10 +35,12 @@ export class SearchComponent implements OnInit {
   }
 
   onSearch(){
-  	this.searchService.searchMusic(this.searchWord, 'artist', localStorage.getItem('a_token'))
-  		.subscribe(res => {
-        this.searchRes = res.artists.items;
-  			console.log(res.artists.items);
-  		})
+    if(this.searchWord !== ''){
+    	this.searchService.searchMusic(this.searchWord, 'artist', localStorage.getItem('a_token'))
+    		.subscribe(res => {
+          this.searchRes = res.artists.items;
+    			console.log(res.artists.items);
+    		})
+    }
   }
 }

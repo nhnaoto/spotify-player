@@ -3,11 +3,13 @@ var request = require('request');
 var path = require('path');
 var querystring = require('querystring');
 var cookieParser = require('cookie-parser');
+var env = require('dotenv');
 
-var client_id = 'xxxxxxxxxxxxxxxxx';
-var client_secret = 'xxxxxxxxxxxxxxxxx';
-var redirect_uri = 'xxxxxxxxxxxxxxxxx';
+env.config();
 
+const client_id = process.env.CLIENT_ID;
+const client_secret = process.env.CLIENT_SECRET;
+const redirect_uri = process.env.REDIRECT_URI;
 
 /**
  * Generates a random string containing numbers and letters

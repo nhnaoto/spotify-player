@@ -11,6 +11,7 @@ import { SearchComponent } from './search/search.component';
 import { SearchService } from './search/search.service';
 import { ArtistComponent } from './artist/artist.component';
 import { AlbumComponent } from './album/album.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { AlbumComponent } from './album/album.component';
     AboutComponent,
     SearchComponent,
     ArtistComponent,
-    AlbumComponent
+    AlbumComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +30,7 @@ import { AlbumComponent } from './album/album.component';
     RouterModule.forRoot([
       {
         path: '',
-        component: SearchComponent
+        component: LoginComponent
       },
       {
         path: 'search',
