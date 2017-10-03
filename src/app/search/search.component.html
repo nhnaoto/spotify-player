@@ -1,7 +1,7 @@
 <p>アーティストを検索しよう。</p>
 <form>
 	<div>
-		<input name="searchWord" class="form-control" [(ngModel)]="searchWord" (keyup)="onSearch()"/>
+		<input name="searchWord" class="form-control" autocomplete="off" [(ngModel)]="searchWord" (keyup)="onSearch()"/>
 	</div>
 	{{searchWord}}
 </form>
